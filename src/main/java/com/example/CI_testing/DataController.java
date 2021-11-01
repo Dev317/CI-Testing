@@ -16,6 +16,11 @@ public class DataController {
         return "HEALTH CHECK OK!";
     }
 
+    @GetMapping("/test")
+    public String testPrint() {
+        return "Test Successful!";
+    }
+
     @GetMapping("/version")
     public String version() {
         return "The actual version is 1.0.0";
